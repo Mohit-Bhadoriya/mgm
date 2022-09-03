@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+body  {
+		background-color:orange;
+      }
+
+#img  {
+		position:absolute;
+		width:500px;
+		height:450px;
+      }
+	  
+.back {
+		background-color:skyblue;
+		width:70px;
+		height:50px;
+		position:absolute;
+		top:465px;
+		left:10px;
+		cursor:pointer;
+		text-align:center;
+		line-height:50px;
+		font-size:30px;
+	  }
+
+.forward {
+		background-color:skyblue;
+		width:70px;
+		height:50px;
+		position:absolute;
+		top:465px;
+		left:100px;
+		cursor:pointer;
+		text-align:center;
+		line-height:50px;
+		font-size:30px;
+	  }
+	  
+.forward:hover{
+				background-color:pink;
+              }
+			  
+.back:hover{
+				background-color:pink;
+              }
+
+</style>
+</head>
+<body>
+<img id="img" src="build.png"/>
+<div id="img1" class="back" onclick="back()"> <  </div>
+<div id="img2" class="forward" onclick="forward()"> > </div>
+
+<script>
+i=0;
+function back()
+	{
+	i-=30;
+	document.getElementById("img").style.left=i+"px";
+	
+	}
+
+function forward()
+	{
+	i+=30;
+	document.getElementById("img").style.left=i+"px";
+	
+	}
+
+
+</script>
+</body>
+<html>
